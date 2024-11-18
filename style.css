@@ -4,7 +4,7 @@
 
 
 
-.Ricerca-Generale input{
+#Ricerca-Generale input{
     width: 600px;
     padding: 15px;
     border: none;
@@ -12,7 +12,24 @@
     
 }
 
+#input1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+
+#input4{
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px ;
+}
 
 
 
+main {
+    width: 100vw; /* Estende la larghezza al 100% del viewport */
+    height: 100vh; /* Estende l'altezza al 100% del viewport */
+    background-image: url('assets/home.jpg'); /* Percorso dell'immagine */
+    background-size: cover; /* Assicura che l'immagine copra tutto senza distorsioni */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita ripetizioni dell'immagine */
+}
 
