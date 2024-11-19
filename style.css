@@ -2,62 +2,37 @@
     width: 100px;
 }
 
-#contenitore {
-    display: flex;
-    justify-content: center;
-}
 
-#Ricerca-Generale{
-    display: flex;
-    justify-content: center;
-    width: 700px;
+
+#Ricerca-Generale input{
+    width: 600px;
     padding: 15px;
     border: none;
-   
 
     
 }
 
-.Titolo-1{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius:10px ;
-    background-color: white;
+#input1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
 }
 
-.Titolo-4{
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px ;
-    background-color: white;
+#input4{
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px ;
 }
 
 
 
-.corpo {
-    width: 100%; /* Estende la larghezza al 100% del viewport */
+
+
+
+main {
+    width: 100vw; /* Estende la larghezza al 100% del viewport */
     height: 100vh; /* Estende l'altezza al 100% del viewport */
     background-image: url('assets/home.jpg'); /* Percorso dell'immagine */
     background-size: cover; /* Assicura che l'immagine copra tutto senza distorsioni */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita ripetizioni dell'immagine */
-    object-fit: contain;
-    overflow: hidden;
- 
 }
-
-.input{
-    border: none;
-    
-}
-
-.Titoli{
-    background-color: white;
-    padding-inline: 15px;
-
-
-}
-
-
-
-
-
 
