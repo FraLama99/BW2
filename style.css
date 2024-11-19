@@ -33,3 +33,19 @@ main {
     background-repeat: no-repeat; /* Evita ripetizioni dell'immagine */
 }
 
+@media (max-width: 768px) {
+    /* Cambiamo alcune proprietà per i dispositivi mobili */
+    body {
+        font-size: 14px; /* Ridurre la dimensione del testo per schermi piccoli */
+    }
+
+    .navbar {
+        flex-direction: column; /* Impostiamo la navbar per avere una disposizione verticale */
+    }
+
+    .main-content {
+        padding: 10px; /* Riduciamo il padding per far sì che il contenuto si adatti meglio */
+    }
+
+    /* Altri stili specifici per dispositivi mobili */
+}
