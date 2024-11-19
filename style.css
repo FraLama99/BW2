@@ -22,6 +22,19 @@
     border-bottom-right-radius:20px ;
 }
 
+/* style pagina 2 */
+.host{
+    cursor: pointer;
+}
+.host:hover {
+    border-radius: 30px;
+    background-color: lightgrey;
+    
+}
+
+/* fine style pagina 2 */
+
+
 
 
 main {
