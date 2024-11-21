@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar bg-body-tertiary border-bottom">
         <div class="container">
-          <a class="navbar-brand navPage2" href="#">
+          <a class="navbar-brand navPage2" href="index.html">
             <img
               src="assets/logo-pink.png"
               alt="Logo"
@@ -55,12 +55,12 @@
                   ><i class="bi bi-justify"></i
                 ></a>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
-                  <li><a class="dropdown-item" href="#">Registrati</a></li>
+                  <li><a class="dropdown-item" href="index.html">Registrati</a></li>
                   <li><a class="dropdown-item" href="#">Accedi</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
-                  <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                  <li><a class="dropdown-item" href="#">go to Home</a></li>
                   <li>
                     <a class="dropdown-item" href="#">Affitta con Airbnb</a>
                   </li>
@@ -129,8 +129,8 @@
           </div>
         </div>
       </div>
-      <div id="contenitore12col" class="container mt-5">
-        <div id="contentiore9col" class="col-9">
+      <div id="contenitore12col" class="container mt-5 d-flex">
+        <div id="contentiore9col" class="col-8">
           <div class="col-9">
             <div class="row mt-2 mb-4">
               <h4>House - Host: Erica</h4>
@@ -140,14 +140,14 @@
               >
               <p class="text-secondary fw-bold">Show host details</p>
             </div>
-            <div class="container d-flex flex-row align-items-center py-3">
+            <div class="container d-flex flex-row align-items-center py-4">
               <i class="bi bi-house-door fs-4 me-3"></i>
               <div class="row">
                 <h5>House</h5>
                 <span>You will have the whole permise for you</span>
               </div>
             </div>
-            <div class="container d-flex flex-row align-items-center py-3">
+            <div class="container d-flex flex-row align-items-center py-4">
               <i class="bi bi-stars fs-4 me-3"></i>
               <div class="row">
                 <h5>Advanced Cleaning Methods</h5>
@@ -156,14 +156,14 @@
                 >
               </div>
             </div>
-            <div class="container d-flex flex-row align-items-center py-3">
+            <div class="container d-flex flex-row align-items-center py-4">
               <i class="bi bi-geo-alt fs-4 me-3"></i>
               <div class="row">
                 <h5>Inverness</h5>
                 <span>5 Kilmore Rd</span>
               </div>
             </div>
-            <div class="container d-flex flex-row align-items-center py-3">
+            <div class="container d-flex flex-row align-items-center py-4">
               <i class="bi bi-calendar-week fs-4 me-3"></i>
               <div class="row">
                 <h5>Cancellation Terms And Fees</h5>
@@ -173,7 +173,7 @@
                 >
               </div>
             </div>
-            <div class="container d-flex flex-row align-items-center py-3">
+            <div class="container d-flex flex-row align-items-center py-4">
               <i class="bi bi-book fs-4 me-3"></i>
               <div class="row">
                 <h5>Rules Of the House</h5>
@@ -184,50 +184,91 @@
               </div>
             </div>
           </div>
-
-          <div class="container mt-5">
-            <form>
-              <div class="d-flex">
-                <div class="mb-3 col-8">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter name"
-                  />
-                </div>
-                <div class="mb-3 col-4 ps-2">
-                  <label for="rating" class="form-label">Rating</label>
-                  <select class="form-select" id="rating">
-                    <option value="1">★</option>
-                    <option value="2">★★</option>
-                    <option value="3">★★★</option>
-                    <option value="4">★★★★</option>
-                    <option value="5">★★★★★</option>
-                  </select>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="review" class="form-label">Review</label>
-                <textarea
-                  class="form-control"
-                  id="review"
-                  rows="3"
-                  placeholder="Type in your review"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
         </div>
-        <div class="col-3"></div>
-          <div class="p-3 border border-secondary shadow-sm" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <h5>Additional Info</h5>
-            <p>This is a 3-column wide box with visible borders and external shadows.</p>
+        <div class="col-4">
+          <div id="riquadro" class="p-3 border border-secondary shadow-lg">
+            <div class="row d-flex flex-row justify-content-between">
+              <div class="col-6">
+                <h5>
+                  Add dates to<br />
+                  see the prieces
+                </h5>
+              </div>
+              <div class="col-4">
+                <p><i class="bi bi-star-fill"></i> 4.0, 6 reviews</p>
+              </div>
+            </div>
+            <div>
+              <form class="d-flex flex-column container p-0 m-0" id="ricercaDisponibilita" role="search">
+                <div class="d-flex flex-row justify-content-center  ">
+                  <div class="Titoli ">
+                    <input class="input " type="date" placeholder="gg/mm/aaaa">
+                  </div>
+                  <div class="Titoli ">
+                    <input class="input " type="date" placeholder="gg/mm/aaaa">
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <input class="input " type="text" placeholder="guest">
+                </div>
+              </form>
+        
+            </div>
           </div>
         </div>
       </div>
+      <div class="container mt-5">
+        <form class="col-9">
+          <div class="d-flex">
+            <div class="mb-3 col-8">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="mb-3 col-4 ps-2">
+              <label for="rating" class="form-label">Rating</label>
+              <select class="form-select" id="rating">
+                <option value="1">★</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="review" class="form-label">Review</label>
+            <textarea
+              class="form-control"
+              id="review"
+              rows="3"
+              placeholder="Type in your review"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="container d-flex flex-row align-items-center py-3">
+        <div class="d-flex align-items-start">
+          <img src="assets/propic.png" alt="Avatar" class="rounded-circle me-3 avatar">
+          <div class="row">
+              <h6 class="mb-1">Noemi <small class="text-muted">Jan 2021</h6>
+            <span class="mb-0">Contrary to other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise amazing house.</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-start">
+          <img src="assets/propic.png" alt="Avatar" class="rounded-circle me-3 avatar">
+          <div class="row">
+              <h6 class="mb-1">Enrico <small class="text-muted">Jan 2021 </h6>
+            <span class="mb-0">Amazing place. I've been here with my daughter to take pictures and we were not disappointed!</span>
+          </div>
+        </div>
+      </div>
+  
     </main>
   </body>
   <script
