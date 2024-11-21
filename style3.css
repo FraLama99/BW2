@@ -1,3 +1,45 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.host {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.mondo {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.host:hover {
+  background-color: rgba(211, 211, 211, 0.459);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.mondo:hover {
+  background-color: rgba(211, 211, 211, 0.459);
+  border-radius: 50%;
+
+  padding: 5px;
+}
+
+.user {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+  content: none !important;
+}
+
 .imgGrande img {
   width: 100%;
   height: 100%;

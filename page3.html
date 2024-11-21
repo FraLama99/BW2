@@ -20,8 +20,8 @@
 
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary border-bottom">
+        <div class="container">
           <a class="navbar-brand navPage2" href="#">
             <img
               src="assets/logo-pink.png"
@@ -33,17 +33,59 @@
           </a>
 
           <div class="d-flex gap-4 justify-content-center align-items-center">
-            <div class="d-flex gap-2">
-              <p class="mb-0">Become a host</p>
-
-              <i class="bi bi-globe"></i>
+            <div class="d-flex align-items-center gap-2">
+              <div class="host">
+                <p class="mb-0 fw-bold">Become a host</p>
+              </div>
+              <div class="mondo">
+                <i class="bi bi-globe"></i>
+              </div>
             </div>
+            <!-- div che contiene lo span user col menu dropdown -->
             <div>
               <span
-                class="d-flex align-items-center gap-2 rounded-pill border border-secondary p-2"
+                class="d-flex align-items-center gap-2 rounded-pill border border-secondary p-2 dropstart user"
               >
-                <i class="bi bi-justify"></i>
-                <i class="bi bi-person-circle"></i>
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: black"
+                  ><i class="bi bi-justify"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="#">Registrati</a></li>
+                  <li><a class="dropdown-item" href="#">Accedi</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Affitta con Airbnb</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Proponi un'esperienza</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Centro assistenza</a>
+                  </li>
+                </ul>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="grey"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                  />
+                </svg>
               </span>
             </div>
           </div>
@@ -77,4 +119,3 @@
     crossorigin="anonymous"
   ></script>
 </html>
- 
