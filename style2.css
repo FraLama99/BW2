@@ -50,15 +50,41 @@ padding: 5px;
     display: none !important;
 }
 
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permette di andare su più righe */
+    gap: 16px; /* Spaziatura tra le card */
+    justify-content: center; /* Centra le card */
+}
+
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    flex: 1 1 calc(50% - 16px); /* Ogni card occupa il 50% dello spazio meno il gap*/
+    max-width: calc(50% - 16px); 
 }
 
 
-
+.card-text {
+    white-space: nowrap; /* Evita che il testo vada su più righe */
+    overflow: hidden; /* Nasconde il testo in eccesso */
+    text-overflow: ellipsis; /* Aggiunge "..." se il testo è troppo lungo */
+}
 
 
 
 
 /* responsive css */
 
+@media (min-width: 768px) {
+    .card {
+        flex: 1 1 calc(33.33% - 16px); /* Tre card per riga sui tablet */
+        max-width: calc(33.33% - 16px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 calc(25% - 16px); /* Quattro card per riga sui desktop */
+        max-width: calc(25% - 16px);
+    }
+}
