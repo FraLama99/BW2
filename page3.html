@@ -41,7 +41,7 @@
                 <i class="bi bi-globe"></i>
               </div>
             </div>
-            <!-- div che contiene lo span user col menu dropdown -->
+
             <div>
               <span
                 class="d-flex align-items-center gap-2 rounded-pill border border-secondary p-2 dropstart user"
@@ -55,7 +55,9 @@
                   ><i class="bi bi-justify"></i
                 ></a>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
-                  <li><a class="dropdown-item" href="index.html">Registrati</a></li>
+                  <li>
+                    <a class="dropdown-item" href="index.html">Registrati</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Accedi</a></li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -111,18 +113,17 @@
       <div class="container-fluid d-flex flex-column">
         <div
           class="container divImg p-0 d-flex rounded-5 object-fit-cover overflow-hidden grid gap-3"
-        
         >
-          <div class="imgGrande col-6 ">
+          <div class="imgGrande col-6">
             <img src="assets/1.webp" alt="grande" />
           </div>
 
-          <div class="container col-6  ">
+          <div class="container col-6">
             <div class="row imgPiccole p-0 d-flex pb-1">
               <img class="col-6 p-0 pe-1" src="assets/2.webp" alt="piccola1" />
               <img class="col-6 p-0 ps-1" src="assets/4.webp" alt="piccola2" />
             </div>
-            <div class="row imgPiccole p-0 d.flex pt-1">
+            <div class="row imgPiccole p-0 d-flex pt-1">
               <img class="col-6 p-0 pe-1" src="assets/3.webp" alt="piccola3" />
               <img class="col-6 p-0 ps-1" src="assets/5.webp" alt="piccola4" />
             </div>
@@ -130,8 +131,8 @@
         </div>
       </div>
       <div id="contenitore12col" class="container mt-5 d-flex">
-        <div id="contentiore9col" class="col-8">
-          <div class="col-9">
+        <div id="contentiore8col" class="col-12 col-md-8">
+          <div class="col-12 col-md-9">
             <div class="row mt-2 mb-4">
               <h4>House - Host: Erica</h4>
               <span
@@ -185,41 +186,94 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div id="riquadro" class="p-3 border border-secondary rounded-5 shadow-lg d-none d-md-block">
+        <div class="d-none col-4 d-md-block">
+          <div
+            id="riquadro"
+            class="p-3 border border-secondary rounded-5 shadow-lg d-none d-md-block"
+          >
             <div class="row d-flex flex-row justify-content-between">
               <div class="col-6">
                 <h5>
                   Add dates to<br />
-                  see the prieces
+                  see the prices
                 </h5>
               </div>
               <div class="col-4">
                 <p><i class="bi bi-star-fill"></i> 4.0, 6 reviews</p>
               </div>
             </div>
-            <div >
-              <form class="d-flex flex-column container p-2 m-0 grid  " id="ricercaDisponibilita" role="search">
-               
-                 <div class="container-fluid d-flex p-0">
-                    <input class="input flex-fill p-0" type="date" placeholder="gg/mm/aaaa">
-                  
-                  
-                    <input class="input flex-fill p-0" type="date" placeholder="gg/mm/aaaa">
-                  
-                  </div>
-                
-                  <input class="input " type="text" placeholder="guest">
-                
-                <button class="btn btn-danger mt-2"> Cancel Booking</button>
-              
+            <div>
+              <form
+                class="d-flex flex-column container p-2 m-0"
+                id="ricercaDisponibilita"
+                role="search"
+              >
+                <div class="container-fluid d-flex p-0">
+                  <input
+                    class="input flex-fill p-0"
+                    type="date"
+                    placeholder="gg/mm/aaaa"
+                  />
+                  <input
+                    class="input flex-fill p-0"
+                    type="date"
+                    placeholder="gg/mm/aaaa"
+                  />
+                </div>
+                <input class="input" type="text" placeholder="guest" />
+                <button class="btn btn-danger mt-2" type="button">
+                  Cancel Booking
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
+      <div class="col p-3 d-md-none">
+        <div
+          id="riquadro"
+          class="p-3 border border-secondary rounded-5 shadow-lg"
+        >
+          <div class="row d-flex flex-row justify-content-between">
+            <div class="col-6">
+              <h5>
+                Add dates to<br />
+                see the prices
+              </h5>
+            </div>
+            <div class="col-4">
+              <p><i class="bi bi-star-fill"></i> 4.0, 6 reviews</p>
+            </div>
+          </div>
+          <div>
+            <form
+              class="d-flex flex-column container p-2 m-0"
+              id="ricercaDisponibilita"
+              role="search"
+            >
+              <div class="container-fluid d-flex p-0">
+                <input
+                  class="input flex-fill p-0"
+                  type="date"
+                  placeholder="gg/mm/aaaa"
+                />
+                <input
+                  class="input flex-fill p-0"
+                  type="date"
+                  placeholder="gg/mm/aaaa"
+                />
+              </div>
+              <input class="input" type="text" placeholder="guest" />
+              <button class="btn btn-danger mt-2" type="button">
+                Cancel Booking
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="container mt-5">
-        <form class="col-9">
+        <form class="col-12 col-md-9">
           <div class="d-flex">
             <div class="mb-3 col-8">
               <label for="name" class="form-label">Name</label>
@@ -253,23 +307,42 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-      <div class="container d-flex flex-row align-items-center py-3">
-        <div class="d-flex align-items-start">
-          <img src="assets/propic.png" alt="Avatar" class="rounded-circle me-3 avatar">
-          <div class="row">
-              <h6 class="mb-1">Noemi <small class="text-muted">Jan 2021</h6>
-            <span class="mb-0">Contrary to other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise amazing house.</span>
+      <div class="container d-flex flex-row">
+        <div class="container col d-flex flex-column align-items-start py-3">
+          <div class="d-flex align-items-start">
+            <img
+              src="assets/propic.png"
+              alt="Avatar"
+              class="rounded-circle me-3 avatar"
+            />
+            <div class="row">
+              <h6 class="mb-1">Noemi</h6>
+              <span> Jan 2021</span>
+            </div>
           </div>
+          <span class="mb-0"
+            >Contrary to other reviews, I was cold and couldn't figure out how
+            to turn on the heating... Otherwise amazing house.</span
+          >
         </div>
-        <div class="d-flex align-items-start">
-          <img src="assets/propic.png" alt="Avatar" class="rounded-circle me-3 avatar">
-          <div class="row">
-              <h6 class="mb-1">Enrico <small class="text-muted">Jan 2021 </h6>
-            <span class="mb-0">Amazing place. I've been here with my daughter to take pictures and we were not disappointed!</span>
+        <div class="container col d-flex flex-column align-items-start py-3">
+          <div class="d-flex align-items-start">
+            <img
+              src="assets/propic.png"
+              alt="Avatar"
+              class="rounded-circle me-3 avatar"
+            />
+            <div class="row">
+              <h6 class="mb-1">Enrico</h6>
+              <span>Jan 2021</span>
+            </div>
           </div>
+          <span class="mb-0"
+            >Amazing place. I've been here with my daughter to take pictures and
+            we were not disappointed!</span
+          >
         </div>
       </div>
-  
     </main>
   </body>
   <script
