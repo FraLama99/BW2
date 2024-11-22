@@ -110,21 +110,21 @@
       </div>
       <div class="container-fluid d-flex flex-column">
         <div
-          class="container divImg p-0 d-flex rounded-5 object-fit-cover"
-          style="border: 1px solid black"
+          class="container divImg p-0 d-flex rounded-5 object-fit-cover overflow-hidden grid gap-3"
+        
         >
-          <div class="imgGrande col-6">
+          <div class="imgGrande col-6 ">
             <img src="assets/1.webp" alt="grande" />
           </div>
 
-          <div class="container col-6">
-            <div class="row imgPiccole p-0 d-flex">
-              <img class="col-6" src="assets/2.webp" alt="piccola1" />
-              <img class="col-6" src="assets/4.webp" alt="piccola2" />
+          <div class="container col-6  ">
+            <div class="row imgPiccole p-0 d-flex pb-1">
+              <img class="col-6 p-0 pe-1" src="assets/2.webp" alt="piccola1" />
+              <img class="col-6 p-0 ps-1" src="assets/4.webp" alt="piccola2" />
             </div>
-            <div class="row imgPiccole p-0 d.flex">
-              <img class="col-6" src="assets/3.webp" alt="piccola3" />
-              <img class="col-6" src="assets/5.webp" alt="piccola4" />
+            <div class="row imgPiccole p-0 d.flex pt-1">
+              <img class="col-6 p-0 pe-1" src="assets/3.webp" alt="piccola3" />
+              <img class="col-6 p-0 ps-1" src="assets/5.webp" alt="piccola4" />
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@
           </div>
         </div>
         <div class="col-4">
-          <div id="riquadro" class="p-3 border border-secondary shadow-lg">
+          <div id="riquadro" class="p-3 border border-secondary rounded-5 shadow-lg d-none d-md-block">
             <div class="row d-flex flex-row justify-content-between">
               <div class="col-6">
                 <h5>
@@ -198,19 +198,21 @@
                 <p><i class="bi bi-star-fill"></i> 4.0, 6 reviews</p>
               </div>
             </div>
-            <div>
-              <form class="d-flex flex-column container p-0 m-0" id="ricercaDisponibilita" role="search">
-                <div class="d-flex flex-row justify-content-center  ">
-                  <div class="Titoli ">
-                    <input class="input " type="date" placeholder="gg/mm/aaaa">
+            <div >
+              <form class="d-flex flex-column container p-2 m-0 grid  " id="ricercaDisponibilita" role="search">
+               
+                 <div class="container-fluid d-flex p-0">
+                    <input class="input flex-fill p-0" type="date" placeholder="gg/mm/aaaa">
+                  
+                  
+                    <input class="input flex-fill p-0" type="date" placeholder="gg/mm/aaaa">
+                  
                   </div>
-                  <div class="Titoli ">
-                    <input class="input " type="date" placeholder="gg/mm/aaaa">
-                  </div>
-                </div>
-                <div class="row d-flex justify-content-center">
+                
                   <input class="input " type="text" placeholder="guest">
-                </div>
+                
+                <button class="btn btn-danger mt-2"> Cancel Booking</button>
+              
               </form>
         
             </div>
