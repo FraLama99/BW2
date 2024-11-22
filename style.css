@@ -1,6 +1,60 @@
+/* NAVBAR --------- */
+
+
+
 .navbar-brand img{
     width: 100px;
 }
+
+.NAV{
+    background-color: black!important;
+    opacity: 1!important;
+  
+  }
+
+
+
+.parte-centrale > ul >li > a{
+    color: white;
+    opacity: 1!important;
+    background-color: transparent;
+ 
+}
+
+
+.parte-centrale > ul >li > a:hover{
+   
+    color: white;
+
+   
+  
+}
+
+
+
+.i{
+    color: white;
+    opacity: 1!important;
+ 
+}
+
+
+
+.icona{
+    color: black;
+}
+
+
+
+.menu-user > a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
 
 #contenitore {
     display: flex;
@@ -31,19 +85,6 @@
 }
 
 
-
-.corpo {
-    width: 100%; /* Estende la larghezza al 100% del viewport */
-    height: 100vh; /* Estende l'altezza al 100% del viewport */
-    background-image: url('assets/home.jpg'); /* Percorso dell'immagine */
-    background-size: cover; /* Assicura che l'immagine copra tutto senza distorsioni */
-    background-position: center; /* Centra l'immagine */
-    background-repeat: no-repeat; /* Evita ripetizioni dell'immagine */
-    object-fit: contain;
-    overflow: hidden;
- 
-}
-
 .input{
     border: none;
     
@@ -62,6 +103,108 @@ footer img{
 }
 
 
+.corpo {
+    width: 100vw; 
+    height: 100vh;
+    background-image: url('assets/home.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+    overflow: hidden;
+    
+ 
+}
+.titolone {
+    position: relative; 
+    height: 100vh; 
+}
 
 
 
+.titolone h1{
+    font-size: 70px;
+    position: absolute;
+    height: 100vh;
+    top:50%;
+    transform: translate(-50%, -26%);
+    margin: auto;
+    z-index: 1;
+ 
+}
+
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar-brand img {
+        width: 80px; 
+    }
+
+    .navbar-nav {
+        text-align: center; 
+    }
+
+    
+    #Ricerca-Generale {
+        width: 100%; 
+    }
+
+    .Titolo-1, .Titoli, .Titolo-4 {
+        width: 100%; 
+        padding: 10px;}
+    
+
+    
+    .titolone h1{
+        font-size: 50px; 
+        transform: translate(-50%, -50%); 
+        position: absolute;
+    }
+
+    
+    .corpo {
+        background-size: cover;
+        background-position: center;
+
+    
+        
+       
+}
+    }
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 60px; 
+    }
+
+    .navbar-nav {
+        text-align: center; 
+    }
+
+    
+    #Ricerca-Generale {
+        flex-direction: column; 
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .Titolo-1, .Titoli, .Titolo-4 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .titolone h1 {
+        font-size: 40px;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .corpo {
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
