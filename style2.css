@@ -46,9 +46,11 @@ padding: 5px;
 
 }
 
-.dropdown-toggle::after {
+.dropdown-toggle::after {       
     display: none !important;
 }
+
+
 
 .cardContainer {
     display: flex;
